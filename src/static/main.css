@@ -1,0 +1,21 @@
+@tailwind preflight;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-white font-sans antialiased leading-normal;
+}
+
+* {
+  transition: all 0.2s ease;
+}
+
+/* Typography */
+p {
+  @apply text-grey leading-normal;
+}
+
+h1::after {
+  @apply bg-grey-light h-px w-16 block mx-auto;
+  content: '';
+}
